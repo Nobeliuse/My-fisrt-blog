@@ -1,0 +1,23 @@
+header{
+	background-image: url("../images/header.jpg");
+	background-size: cover;
+	height: 1000px;
+	background-repeat: no-repeat;
+}
+.form-data{
+	font-size: 25px;
+	margin-left: 60%;
+	margin-top: 20%;
+}
+.enter{
+	padding: 1%;
+	font-size: 20px;
+	margin-top: 2%;
+}
+.title{
+	padding: 2%;
+	width: 70%;
+	border-radius: 4px;
+	font-size: 20px;
+
+}

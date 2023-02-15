@@ -1,0 +1,43 @@
+<style>
+	a{
+		color: white;
+		text-decoration: none;
+	}
+</style>
+<header>
+  <div class="header">
+			<div class="logo">
+				<a href="{% url 'home' %}">My first blog</a>
+			</div>
+			<div class="right__nav">
+				<div class="top__nav header__nav">
+					<ul>
+						{% if user.is_authenticated %}
+						<li>Hello, {{ user.username }}</li>
+						<li><a href="{% url 'logout' %}">Logout from the account</a></li>
+						{% else %}
+						<li>Not logged in</li>
+						<li><a href="{% url 'create_account' %}">Create an account</a></li>
+						<li><a href="{% url 'sign_in' %}">Sign in</a></li>
+						{% endif %}
+					</ul>
+				</div>
+				<div class="search">
+					<form method="POST" action="{% url 'search_article' %}">
+						{% csrf_token %}
+						<input type="text" name="q" placeholder="Search..." class="search_input">
+					</form>
+				</div>
+			</div>
+		</div>
+	{% block welcome %}
+  <div class="welcome">
+    <div class="welcome_container">
+					<span>Welcome to the club body!</span>
+					<span class='num_art'>Numbers of articles : {{ count_article }}</span>
+					<br><br>
+					You've landed on the best, in my opinion, website for video games!
+				</div>
+  </div>
+	{% endblock %}
+</header>

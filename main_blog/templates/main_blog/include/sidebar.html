@@ -1,0 +1,25 @@
+<div class="left_sitebar">
+				<div class="list_con">
+					<ul class="list_ul">
+						<li class="list_li"><a href="{% url 'home' %}">MAIN PAGE</a></li>
+						<li class="list_li"><a href="#">ABOUT WEBSITE</a></li>
+						<li class="list_li"><a href="{% url 'random_article' %}">RANDOM ARTICLE</a></li>
+					</ul>
+				</div>
+				<div class="list_con">
+					<ul class="list_ul">
+						<li class="list_li header_sitebar">CATEGORIES</li><hr>
+						{% for category in categories %}
+							<li class="list_li"><a href="{{ category.get_absolute_url }}">{{ category.name }}</a></li>
+						{% endfor %}
+					</ul>
+				</div>
+				<div class="list_con">
+					<ul class="list_con">
+						<li class="list_li header_sitebar">NEW ARTICLES</li><hr>
+						{% for new_article in new_articles %}
+							<li class="list_li"><a href="{{ new_article.get_absolute_url }}">{{ new_article.title }}</a></li>
+						{% endfor %}
+					</ul>
+				</div>
+			</div>

@@ -1,0 +1,15 @@
+{% extends 'main_blog/base.html' %}
+{% block content %}
+<div class="detail_content">
+    <div class="title_detail">
+        {{post.title}}
+    </div>
+    <div class="category_detail">
+        {{ post.category }}
+    </div>
+    <div class="content">
+        {{ post.text }}
+    </div>
+</div>
+
+{% endblock %}

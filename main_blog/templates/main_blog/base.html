@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My first blog</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'main_blog/style/base_style.css' %}">
+	<link rel="stylesheet" href="{% static 'main_blog/style/style_page.css' %}">
+</head>
+<body>
+    {% include 'main_blog/include/header.html' %}
+	<section>
+		{% include 'main_blog/include/navigation.html' %}
+		<div class="main">
+			{% include 'main_blog/include/sidebar.html' %}
+				{% block content %}
+				{% endblock %}
+		</div>
+	</section>
+	{% include 'main_blog/include/footer.html' %}
+</body>
+</html>

@@ -1,0 +1,183 @@
+@font-face {
+	font-family: "FredokaOne-Regular";
+	src: url("../fonts/FredokaOne-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "Nunito-VariableFont_wght";
+
+	src: url("../fonts/Nunito-VariableFont_wght.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+/* The main Blocks  */
+.hello{
+	display: grid;
+	grid-template-columns: 42% 20% 30%;
+	margin-top: 2.5%;
+	margin-bottom: 2.5%;
+	border-bottom: 4px solid white;
+	font-size: 25px;
+}
+.category_nav{
+	margin-left: 30%;
+	margin-bottom: 5%;
+}
+body{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	color: white;
+	background-color: #333232;
+	font-family: "FredokaOne-Regular";
+}
+header{
+	background-image: url("../images/header.jpg");
+	background-size: cover;
+	height: 700px;
+	background-repeat: no-repeat;
+}
+.header{
+	display: grid;
+	font-size: 20px;
+	grid-template-columns: 50% 50%;
+
+}
+
+.header__nav > ul > li{
+
+	display: inline;
+	list-style-type: none;
+}
+
+.top__nav > ul > li{
+	padding: 10px;
+	margin-left: 5%;
+}
+
+
+.search_input{
+	margin-left: 20%;
+	border-radius: 7px;
+	height: 20px;
+	width: 70%;
+	padding: 1%;
+	outline: none;
+}
+/* sitebar */
+.logo{
+	font-size: 20px;
+	width: 100%;
+	height: 20%;
+	padding: 5%;
+}
+ul>li>a{
+	color: white;
+	text-decoration: none;
+}
+ul>li>a:hover{
+	border: 2px solid white;
+	padding: 1%;
+}
+.welcome{
+	font-size: 25px;
+	margin-left: 55%;
+	margin-top: 20%;
+}
+.num_art{
+	margin-left: 4%;
+}
+/*Main content*/
+.main{
+	display: grid;
+	grid-template-columns: 20% 80%;
+	font-size: 19px;
+}
+/*left sitebar*/
+.left_sitebar{
+	border-right: 5px solid white;
+	padding-left: 7%;
+}
+.list_con{
+	margin-top: 10%;
+	padding: 0px;
+	list-style-type: none;
+
+}
+.list_con > ul > li{
+	list-style-type: none;
+	margin-bottom: 5px;
+}
+.list_con > ul{
+	padding: 15px;
+}
+
+.header_sitebar{
+	font-size: 22px;
+}
+.articles{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-column: 1em;
+	margin: 3%;
+	margin-left: 5%;
+	font-family: "Nunito-VariableFont_wght";
+}
+.title{
+	margin-bottom: 5%;
+	font-size: 25px;
+	border-bottom: 2px solid white;
+}
+.article{
+	margin-right: 5%;
+	margin-bottom: 20%;
+}
+.text{
+	margin-bottom: 5%;
+}
+.read_more{
+	font-size: 19px;
+	margin-top: 2%;
+	width: 90%;
+	padding: 2%;
+}
+/*footer*/
+.footer{
+	border-top: 4px solid white;
+}
+.info_about_site{
+	margin-top: 1%;
+	font-size: 25px;
+	margin-left: 30%;
+}
+.contact{
+	margin-left: 29%;
+	font-size: 20px;
+}
+.contact>ul>li{
+	padding: 0.5%;
+	list-style-type: none;
+	width: 50%;
+}
+.info_about_us{
+	margin: 2%;
+	font-size: 20px;
+
+}
+
+.text_info{
+	border-bottom: 4px solid white;
+}
+.about_us>a{
+	margin-left: 30%;
+}
+.github>a{
+	margin-left: 30%;
+}
+.email{
+	margin-left: 8%;
+}
+
+
